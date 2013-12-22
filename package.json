@@ -1,0 +1,23 @@
+{
+  "name": "jsh",
+  "version": "0.0.1",
+  "description": "Easier way to write shell scripts with the aid of JavaScript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/config-read-test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "shell",
+    "script"
+  ],
+  "author": "Aishwar Muthuraman",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "~3.0.0",
+    "execSync": "~1.0.1-pre"
+  }
+}
