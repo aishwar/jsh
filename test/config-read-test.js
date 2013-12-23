@@ -7,12 +7,12 @@ console.log(' - Values of the form "$(\'<command>\')" should be replaced with th
 console.log(' - The above should apply to nested values as well');
 
 assert.deepEqual(read(__dirname + '/test.yml'), {
-  $topic: 'Source Control',
-  $companies: {
+  topic: 'Source Control',
+  companies: {
     github: 1,
     bitbucket: 1
   },
-  $nodejs: {
+  nodejs: {
     version: 'v10',
     creator: {
       name: 'Ryan Dahl',
