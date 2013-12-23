@@ -2,7 +2,7 @@ var assert = require('assert');
 var fs = require('fs');
 var parse = require('../lib/parse');
 
-var lines = fs.readFileSync('parse-test.jsh', 'utf8').split('\n');
+var lines = fs.readFileSync(__dirname + '/parse-test.jsh', 'utf8').split('\n');
 var results = lines.map(parse);
 var expectations = [
   {type: 'comment', value: 'Comment'},
@@ -17,7 +17,7 @@ var expectations = [
   {type: 'whitespace', value: ''}
 ];
 
-console.log('Testing: comment, whitespace, log, and command types');
+console.log('Testing parse');
 
 // Utility to help debugging:
 //   console.log('Actual', results[4], '; Expected', expectations[4]);

@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/config-read-test.js"
+    "test": "node test/config-read-test.js && node test/parse-test.js && node test/substitute-values-test.js && node test/run-test.js"
   },
   "repository": "",
   "keywords": [

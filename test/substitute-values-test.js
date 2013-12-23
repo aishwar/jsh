@@ -2,7 +2,7 @@
 var substituteValues = require('../lib/substitute-values');
 var assert = require('assert');
 
-console.log('Tests stareted');
+console.log('Testing substitute-values');
 
 assert.equal(substituteValues('hello', {}), 'hello', 
   'No substitution');

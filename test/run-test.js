@@ -7,17 +7,18 @@ var run = require('../lib/run');
 var read = require('../lib/read');
 
 
+console.log('Testing script-runner');
 [ 'simple', 'default-error-message', 'custom-error-message' ].forEach(function (file) {
   console.log('Testing ' + file + '.jsh');
   
-  var result = sh.exec('node .. --using ./run-test-fixtures/props.yml ./run-test-fixtures/' + file 
-    + '.jsh');
+  var result = sh.exec('node ' + __dirname + '/.. ' + 
+    '--using ' + __dirname + '/run-test-fixtures/props.yml ' + 
+    __dirname + '/run-test-fixtures/' + file + '.jsh');
   var actual = trimLineEndings(result.stdout);
-  var expected = trimLineEndings(fs.readFileSync('./run-test-fixtures/' + file + '.out', 'utf8'));
+  var expected = trimLineEndings(fs.readFileSync(__dirname + '/run-test-fixtures/' + file + '.out', 'utf8'));
   
   if (actual != expected) {
     var diff = jsdiff.diffChars(actual, expected);
-    console.log(diff);
     diff.forEach(function(part){
       // green for additions, red for deletions
       // grey for common parts
