@@ -1,0 +1,13 @@
+[LOG]  Simple command
+[OUT]  Hello
+
+[LOG]  Simple log message
+[OUT]  js
+
+[LOG]  Shell evaluated value
+[OUT]  v10
+
+[LOG]  Deep nested value
+[OUT]  Ryan Dahl
+
+Script executed

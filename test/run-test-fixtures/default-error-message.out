@@ -1,0 +1,3 @@
+[LOG]  Custom error message
+[ERROR]  Command "cd dir-that-does-not-exist" failed execution with a return value of: 1
+Program terminated due to error

@@ -18,6 +18,10 @@
   "license": "MIT",
   "dependencies": {
     "js-yaml": "~3.0.0",
-    "execSync": "~1.0.1-pre"
+    "execSync": "~1.0.1-pre",
+    "commander": "~2.1.0"
+  },
+  "devDependencies": {
+    "diff": "~1.0.8"
   }
 }
